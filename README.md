@@ -9,5 +9,6 @@ FarazPir - Development(Software) Engineer, QA Enginee
 	https://codermerlin.com/users/faraz-piracha/Digital%20Portfolio/index.html
 SophieH8 - Development(Software) Engineer
 	https://www.codermerlin.com/users/sophie-hews/Digital%20Portfolio/index.html
-	
+SterbenShell - Development(Software) Engineer
+        https://www.codermerlin.com/users/michael-choi/Digital%20Portfolio/index.html
 
