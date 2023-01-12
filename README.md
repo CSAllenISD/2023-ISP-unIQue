@@ -17,3 +17,6 @@ SophieH8 - Development(Software) Engineer
 SterbenShell - Development(Software) Engineer
         https://www.codermerlin.com/users/michael-choi/Digital%20Portfolio/index.html
 
+MasonG31 - Product Manager
+	https://codermerlin.com/users/mason-graham/Digital%20Portfolio/index.html
+	
