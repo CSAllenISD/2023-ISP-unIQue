@@ -1,5 +1,5 @@
 # 2023-ISP-unIQue
-## a-sane-human-being (Lucas Pham) - Release Engineer & Development (Software) Engineer
+## a-sane-human-being (Lucas Pham) - Release Engineer & Development (Software) Engineer  
    [Lucas' Digital Portfolio](https://codermerlin.com/users/lucas-pham/Digital%20Portfolio/index.html)
 
 ## hgiordano888 (Helen Giordano) - Development (Software) Engineer 
