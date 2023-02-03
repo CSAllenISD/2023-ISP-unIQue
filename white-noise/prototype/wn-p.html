@@ -2,8 +2,8 @@
 <audio id="audio" src="https://www.zapsplat.com/wp-content/uploads/2015/sound-effects-93160/zapsplat_multimedia_alert_chime_vibraphone_tremolo_positive_001_93390.mp3" loop></audio>
 
 <script>
-  var audio = document.getElementByID("audio");
-  var playButton = document.getElementByID("play-button");
+  var audio = document.getElementById("audio");
+  var playButton = document.getElementById("play-button");
   playButton.addEventListener("click", function() {
       audio.play();
   }_;
