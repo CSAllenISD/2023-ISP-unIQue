@@ -16,7 +16,7 @@
 ## SophieH8 (Sophie Hews) - Development (Software) Engineer
 * ####	     [Sophie's Digital Portfolio](https://www.codermerlin.com/users/sophie-hews/Digital%20Portfolio/index.html)
 
-## SterbenShell (Michael Choi) - Development (Software) Engineer
+## SterbenShell (Michael Choi-testing) - Development (Software) Engineer
 * ####       [Michael's Digital Portfolio](https://www.codermerlin.com/users/michael-choi/Digital%20Portfolio/index.html)
 
 ## MasonG31 (Mason Graham) - Product Manager
