@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 :root{
-    --orange:  #ff7800;
     --black:  #130f40;
     --light-color: #666;
-    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     --border: .2rem solid rgba(0,0,0,.1);
     --outline-hover:  .2rem solid var(--black);
 }
@@ -26,7 +25,7 @@ html{
 }
 
 body{
-    background: #eee;
+    background: #649382;
 }
 
 .header{
@@ -39,7 +38,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 2rem 9%;
-    background: #fff;
+    background: #DFDEDC;
     box-shadow: var(--box-shadow);
 }
 
@@ -47,5 +46,5 @@ body{
     font-size: 1.7rem;
     margin:  0 1rem;
     text-align: left;
-    color: var(--orange);
+    color: #C5AFAA;
 }
