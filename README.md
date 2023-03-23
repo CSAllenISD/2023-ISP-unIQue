@@ -1,4 +1,5 @@
 # 2023-ISP-unIQue
+
 ## Delikatessen (Loren Pontiff) - Project Manager
 * ####       [Loren's Digital Portfolio](https://www.codermerlin.com/users/loren-pontiff/Digital%20Portfolio/index.html)
 ## a-sane-human-being (Lucas Pham) - Release Engineer & Development (Software) Engineer
