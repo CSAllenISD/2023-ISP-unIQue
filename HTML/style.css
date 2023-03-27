@@ -107,6 +107,7 @@ section img#bush_front{
     white-space: nowrap;
     font-size: 7.5vw;
     z-index: 9;
+    transform: translateY(-100px);
 }
 
 #btn {
