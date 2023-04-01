@@ -5,7 +5,7 @@
     transform: translate(-50%, -50%);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
     padding: 15px;
-    background-color: #FFCFA0;
+    background-color: #FF168B;
     border-radius: 5px;
 }
 
@@ -14,5 +14,13 @@
     grid-template-columns: 80px 80px 80px 80px;
     grid-template-rows: 80px 80px 80px 80px;
     border: 1 px solid #1B0079;
+}
+
+.grid button {
+    background-color: #FFCFA0;
+    color: #1B0079;
+    fot-size: 24px;
+    font-weight: bold;
+    border: 1px solid #1B0079;
 }
 	    
