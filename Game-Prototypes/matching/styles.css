@@ -1,0 +1,17 @@
+#grid {
+    width: 660px;
+    height: 328px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardBorder {
+    border-style: outset;
+    border-width: 5px;
+}
+/*
+.hiddenBorder {
+    border-color:transparent !important;
+}
+*/
+
