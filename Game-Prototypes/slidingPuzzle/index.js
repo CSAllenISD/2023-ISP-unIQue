@@ -1,4 +1,4 @@
-.class Box {
+class Box {
     constructor(x, y) {
 	this.x = x;
 	this.y = y;
@@ -191,7 +191,7 @@ class Game {
 
 	// Render message
 	if (status === "won") {
-	    document.querySelector(".message").textContent = "Congrats !You win!";
+	    document.querySelector(".message").textContent = "Congrats! You win!";
 	} else {
 	    document.querySelector(".message").textContent = "";
 	}
