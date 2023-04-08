@@ -5,13 +5,17 @@ html {
 body {
     height: 100%;
     background-image: linear-gradient(#F0A2DE,#F2F087,#F2C687);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.puzzle {
-    position: absolute;
+.game {
+/*    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
     padding: 15px;
     background-color: #c5fb9d;
@@ -28,18 +32,20 @@ body {
 .grid button {
     background-color: #FFCFA0;
     color: #1B0079;
-    fot-size: 24px;
+    font-size: 24px;
     font-weight: bold;
     border: 1px solid #1B0079;
+    outline: none;
+    cursor: pointer;
 }
 	    
-.buttons {
+.footer {
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
 }
 
-.buttons button{
+.footer button{
     border: none;
     font-size: 20px;
     font-weight: bold;
@@ -49,18 +55,25 @@ body {
     width: 80px;
     background-color: #153327;
     color: #FFCD11;
+    outline: none;
+    cursor: pointer;
 }
 
-.buttons button:hover{
+.footer button:hover{
     color: #153327;
     background-color: #FFCD11;
 }
 
-.buttons span{
+.footer span{
     flex: 1;
     text-align: center;
     font-size: 20px;
     color: #153327;
     font-weight: bold;
     margin: auto 0;
+}
+
+.message{
+    color: #1B0079;    
+    height: 80px;
 }
