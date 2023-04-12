@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>unIQue Words</title>
-    <link rel="stylesheet" href="scramble.css">
   </head>
   <body>
-    <h1>unIQue Words</h1>
-
-    <div id="word"></div>
-
-    <form id="guess-form">
-      <label for="guess-input">Enter your guess:</label>
-      <input type="text" id="guess-input">
-      <button type="submit">Submit</button>
-    </form>
-
-    <div id="timer"></div>
-
-    <script src="script.js"></script>
+    <div class ="container">
+      <h1>unIQue Words</h1>
+      <div class="word-container">
+	<p id="word"></p>
+      </div>
+      <form id="guess-form">
+	<input type="text" id="guess-input" placehodler="Enter your guess">
+	<button type="submit">Submit</button>
+      </form>
+      <p id="timer"></p>
+    </div>
+    <script src="scramble.js"></script>
   </body>
 </html>
