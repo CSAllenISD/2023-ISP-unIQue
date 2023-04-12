@@ -16,7 +16,7 @@ guessForm.addEventListener('submit', function(event) {
     event.preventDefault();
     const guessInput = document.getElementById('guess-input');
     const guess = guessInput.value.toLowerCase();
-    if (guess === randomWord) {
+    if (guess === randomWord.toLowerCase()) {
 	alert('You win!');
     } else {
 	alert('Incorrect!');
