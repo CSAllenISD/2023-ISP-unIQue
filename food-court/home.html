@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Recipe Generator</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;600&display=swap"
+      rel="stylesheet"
+      />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Food Court</h1>
-    </header>
+    <div class="container">
+      <div class="search-container">
+	<input
+	  type="text"
+	  placeholder="Type A Dish Name Here.."
+	  id="user-inp"
+	  />
+	<button id="search-btn">Search</button>
+      </div>
+      <div id="result"></div>
+    </div>
 
-    <main>
-      <section>
-	<h2>Select Your Ingredients:</h2>
-	<form>
-
-	  <input type="checkbox" name="ingredient" value="meat"> meat<br>
-	  <input type="checkbox" name="ingredient" value="vegetables"> Vegetables<br>
-	  <input type="checkbox" name="ingredient" value="pasta"> Pasta<br>
-	  <input type="submit" value="Generate Recipe">
-	</form>
-      </section>
-
-      <section>
-	<h2>Recipe:</h2>
-	<p id="recipe"></p>
-      </section>
-    </main>
-
+    <!-- Script -->
     <script src="script.js"></script>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <a href="../HTML/index.html">Back to Home</a>
   </body>
   </html>
