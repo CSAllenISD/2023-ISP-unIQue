@@ -1,43 +1,48 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
 header {
     text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 2rem 0;
+    padding: 20px;
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
 }
 
-h2 {
-    font-size: 1.5rem;
+h3 {
+    font-size: 1.4rem;
+    margin-top: 0;
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    margin: 2rem;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .game-card {
+    text-decoration: none;
+    color: #333;
+    background-color: #e6efff;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 5px;
     position: relative;
     width: 200px;
     height: 200px;
-    margin: 1rem;
     overflow: hidden;
-    border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
 .game-card img {
@@ -46,6 +51,10 @@ h2 {
     object-fit: cover;
     opacity: 0.7;
     transition: opacity 0.3s;
+}
+
+.game-card:hover {
+    background-color: #cce4ff;
 }
 
 .game-card:hover img {
@@ -57,7 +66,7 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: #333;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
