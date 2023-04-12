@@ -18,6 +18,7 @@ guessForm.addEventListener('submit', function(event) {
     const guess = guessInput.value.toLowerCase();
     if (guess === randomWord.toLowerCase()) {
 	alert('You win!');
+	location.reload();
     } else {
 	alert('Incorrect!');
     }
@@ -32,6 +33,7 @@ const countdown = setInterval(function() {
     timerElement.textContent = `Time left: ${timeLeft}`;
     if (timeLeft === 0) {
 	clearInterval(countdown);
-	alert(`Time's up! Your final score is ${score}.`);
+	alert(`Time's up! The correct word was ${randomWord}.`);
+	location.reload();
     }
 }, 1000);
