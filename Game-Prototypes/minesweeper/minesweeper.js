@@ -51,9 +51,11 @@ function generateBoard(rows, cols) {
 
 function placeMines(tiles, mines, safeIndex) {
     const mineIndexes = new Set();
+    const safeNeighbors = getNeighbors(safeIndex);
+
     while (mineIndexes.size < mines) {
 	const index = Math.floor(Math.random() * tiles.length);
-	if (index !== safeIndex) {
+	if (index !== safeIndex && !safeNeighbors.includes(index)) {
 	    mineIndexes.add(index);
 	}
     }
@@ -62,6 +64,21 @@ function placeMines(tiles, mines, safeIndex) {
 	tiles[index].classList.add("mine");
     }
 }
+
+function getNeighbors(index) {
+    const row = Math.floor(index / getColCount());
+    const col = index % getColCount();
+    const neighborCoords = [
+	[row - 1, col - 1], [row - 1, col], [row - 1, col + 1],
+	[row, col - 1],                   [row, col + 1],
+	[row + 1, col - 1], [row + 1, col], [row + 1, col + 1],
+    ];
+
+    return neighborCoords
+        .filter(([r, c]) => r >= 0 && r < getRowCount() && c >= 0 && c < getColCount())
+        .map(([r, c]) => r * getColCount() + c);
+}
+
 
 function updateNumbers(tiles, rows, cols) {
     const neighbors = [-cols - 1, -cols, -cols + 1, -1, 1, cols - 1, cols, cols + 1];
