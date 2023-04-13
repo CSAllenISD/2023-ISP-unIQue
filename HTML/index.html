@@ -6,16 +6,47 @@
     <title>unIQue</title>
   </head>
   <body>
-    <!-- header -->
-    <header class="header">
-
-      <nav class="navigationBar">
-	<a href="#Home">Home</a>
-	<a href="#Games">Games</a>
-	<a href="#Recipes">Recipes</a>
-	<a href="#Tree">Tree</a>
-
-      </nav>
-      <script src="index.js"></script>
+    <header>
+      <a href="#" class="logo">unIQue</a>
+      <ul>
+	<li><a href="#" class="active">Home</a></li>
+	<li><a href="games/index.html">Games</a></li>
+	<li><a href="../food-court/home.html">Food and Recipes</a></li>
+	<li><a href="../white-noise/noise.html">White Noise</a></li>
+	<li><a href="../helpTree/home.html">Help Tree</a></li>
+	</ul>
+    </header>
+    <section>
+      <img src="https://codermerlin.academy/users/sophie-hews/2023ISP-Images/stars.png" id="stars">
+<!--      <img src="https://codermerlin.academy/users/sophie-hews/2023ISP-Images/moon (2).png" id="moon"> -->
+      <img src="https://codermerlin.academy/users/sophie-hews/2023ISP-Images/bush_back.png" id="bush_back">
+      <h2 id="text">unIQue</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="https://codermerlin.academy/users/sophie-hews/2023ISP-Images/bush_front.png" id="bush_front">
+    </section>
+    <div class="sec" id="sec">
+      <h2>Put a Title Here :)</h2>
+      <p>Put a Paragraph Here :(. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut faucibus pulvinar elementum integer enim. Mi bibendum neque egestas congue quisque egestas diam. Consectetur libero id faucibus nisl tincidunt. In dictum non consectetur a erat nam at lectus. Ut lectus arcu bibendum at. Fames ac turpis egestas sed tempus urna et pharetra. Egestas egestas fringilla phasellus faucibus. Pharetra massa massa ultricies mi quis hendrerit. Ultrices sagittis orci a scelerisque purus semper eget duis at. Cursus eget nunc scelerisque viverra mauris in aliquam. Volutpat diam ut venenatis tellus in metus vulputate. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut faucibus pulvinar elementum integer enim. Mi bibendum neque egestas congue quisque egestas diam. Consectetur libero id faucibus nisl tincidunt. In dictum non consectetur a erat nam at lectus. Ut lectus arcu bibendum at. Fames ac turpis egestas sed tempus urna et pharetra. Egestas egestas fringilla phasellus faucibus. Pharetra massa massa ultricies mi quis hendrerit. Ultrices sagittis orci a scelerisque purus semper eget duis at. Cursus eget nunc scelerisque viverra mauris in aliquam. Volutpat diam ut venenatis tellus in metus vulputate. Sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar.</p>
+    </div>
+    <script>
+      let stars = document.getElementById('stars');
+      let bush_back = document.getElementById('bush_back');
+      let text = document.getElementById('text');
+      let btn = document.getElementById('btn');
+      let bush_front = document.getElementById('bush_front');
+      let header = document.querySelector('header');
+      
+      window.addEventListener('scroll', function(){
+	  let value = window.scrollY;
+	  stars.style.left = value * 0.25 + 'px';
+	  bush_back.style.top = value * 0.5 + 'px';
+	  bush_front.style.top = value * 0 + 'px';
+	  text.style.marginRight = value * 4 + 'px';
+	  text.style.marginTop = value * 1.5 + 'px';
+	  btn.style.marginTop = value * 1.5 + 'px';
+	  header.style.top = value * 0.5 + 'px';
+      })
+      
+    </script>
   </body>
     </html>
