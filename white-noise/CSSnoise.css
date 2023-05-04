@@ -18,7 +18,12 @@ body {
     color: #FFF;
     padding: 20px;
 }
-
+.dark-mode-body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(255,255,255,0.6);
+    color:#00000;
+    padding:20px;
+}
 .container {
     backdrop-filter: blur(10px);
     background-color: rgba(17, 17, 17, 0.6);
@@ -26,7 +31,12 @@ body {
     padding: 20px;
     margin-bottom: 20px;
 }
-
+.dark-mode-container {
+    backdrop-filter: rgba(255,255,255,0.6);
+    border-radius: 10px;
+    padding: 20px;
+    magin-bottom: 20px;
+}
 .page-title {
     font-size: 36px;
     font-weight: bold;
