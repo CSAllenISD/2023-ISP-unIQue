@@ -1,3 +1,19 @@
+<<<<<<< HEAD
+ <html lang="en">
+	    <head>
+	      <meta charset="UTF-8">
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	      <link rel="stylesheet" href="styles.css">
+	      <title>Need Help</title>
+	    </head>
+	    <body>
+	      <h1>WELCOME TO THE HELPTREE</h1>
+	      <p>
+		
+		</p>
+	    </body>
+	    </html>
+=======
 <html>
   <h1>Feeling Annoyed, Mad, or Outraged?</h1>
   
@@ -19,3 +35,4 @@
 
 
 </html>
+>>>>>>> 50e83c40b2cbf6221a421b583a4cf8d3005a4649
