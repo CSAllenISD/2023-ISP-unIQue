@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    position: abdolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -71,6 +71,7 @@ section {
     padding-top: 2rem;
 }
 
+.top h3,
 .top h1,
 h2 {
     display: flex;
@@ -78,6 +79,8 @@ h2 {
     align-items: center;
     color: #2b1055;
 }
+
+.top h3,
 .top h1 {
     font-size: 2.2rem;
     margin-bottom: 10px;
