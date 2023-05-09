@@ -11,14 +11,12 @@
 body {
     min-height: 100vh;
     overflow-x: hidden;
-    /*    background: linear-gradient(#581845,#C70039,#FF5733,#FF767E); */
-    /*background: linear-gradient(#E4E3EC,#FEF2DE,#F6C6C2);  */
     background: linear-gradient(#F0A2DE,#F2F087,#F2C687);  
     
 }
 
 header {
-    position: abdolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -121,6 +119,47 @@ section img#bush_front{
     z-index: 9;
     transform: translateY(100px);    
 }
+
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background-color: #3E9481;
+    overflow: hidden;
+}
+
+.scrollText{
+    white-space: nowrap;
+    margin: 0 2em;
+}
+
+.scrollText div{
+    display: flex;
+    gap: 2em;
+}
+
+.scrollText p {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 10px;
+}
+
+.RightToLeft {
+    animation: RightToLeft 30s infinite linear;
+}
+
+@keyframes RightToLeft {
+    from {
+	transform: translateX(0%);
+    }
+    to {
+	transform: translateX(-20%);
+    }
+}
+
 
 .sec{
     position: relative;

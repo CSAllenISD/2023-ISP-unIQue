@@ -1,39 +1,88 @@
-body::before {
-    content: "";
-    position: fixed;
+.page-title,
+.page-subtitle,
+.audio-player p {
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: #c3cb71;
+    color: #2b1055;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background-image: url("https://bookstr.com/wp-content/uploads/2021/09/00443d63-06f8-48c5-9621-0a9240f3789e.gif");
-    background-size: cover;
-    filter: blur(5px);
-    z-index: -1;
-}
-body {
-    font-family: Arial, sans-serif;
-    background-color: rgba(17, 17, 17, 0.6);
-    color: #FFF;
-    padding: 20px;
-}
-.container {
-    backdrop-filter: blur(10px);
-    background-color: rgba(17, 17, 17, 0.6);
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-.page-title {
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 20px;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
 }
 
-.page-subtitle {
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 40px;
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    Letter-spacing: 2px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover, header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #2b1055;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #C70039;
 }
 
 .audio-player {
@@ -42,7 +91,7 @@ body {
     align-items: center;
     margin-bottom: 20px;
     padding: 15px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(43, 16, 85, 0.3);
     border-radius: 4px;
 }
 
@@ -51,6 +100,7 @@ body {
     font-weight: bold;
     margin-bottom: 5px;
     text-transform: uppercase;
+    color: #fff;
 }
 
 .audio-player audio {
@@ -89,10 +139,10 @@ body {
     -webkit-appearance: none;
     width: 14px;
     height: 14px;
-    background: white;
+    background:white;
     border-radius: 50%;
     cursor: pointer;
-    margin-top: -5px; /* Add this line to center the position indicator */
+    margin-top: -5px;
 }
 
 .audio-player input[type="range"]::-webkit-slider-runnable-track {

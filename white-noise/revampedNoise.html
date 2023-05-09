@@ -6,22 +6,34 @@
     <link rel="stylesheet" type="text/css" href="revamped.css">
     <style>
       .audio-player {
-	  margin-bottom: 20px;
+          margin-bottom: 20px;
       }
       .audio-player audio {
-	  display: block;
-	  margin-bottom: 10px;
+          display: block;
+          margin-bottom: 10px;
       }
       .audio-player button {
-	  margin-right: 10px;
+          margin-right: 10px;
       }
     </style>
   </head>
   <body>
+    <header>
+      <a href="#" class="logo">unIQue</a>
+      <ul>
+	<li><a href="../HTML/home.html">Home</a></li>
+	<li><a href="../HTML/games/index.html">Games</a></li>
+	<li><a href="../food-court/home.html">Food and Recipes</a></li>
+	<li><a href="../white-noise/prototype/basic-example.html">White Noise</a></li>
+	<li><a href="">Help Tree</a></li>
+      </ul>
+    </header>
 
     <h1 class="page-title">White Noise</h1>
     <p class="page-subtitle">Find your soundscape.</p>
-    
+
+    <!-- This code is pretty modular so you should be able to replicate the audio players by just copy and pasting the code -->
+
     <p>Airport Gate</p>
     <div class="audio-player">
       <audio src="white%20noise/airport-gate-1.mp3"></audio>
@@ -106,29 +118,29 @@
       <button class="playpause">Play</button>
       <input class="volume" type="range" min="0" max="1" step="0.1" value="1">
     </div>
-    
-    
+
+
     <script>
       var audioPlayers = document.querySelectorAll('.audio-player');
 
       audioPlayers.forEach(function(player) {
-	  var audio = player.querySelector('audio');
-	  var playpause = player.querySelector('.playpause');
-	  var volume = player.querySelector('.volume');
+          var audio = player.querySelector('audio');
+          var playpause = player.querySelector('.playpause');
+          var volume = player.querySelector('.volume');
 
-	  playpause.addEventListener('click', function() {
-	      if (audio.paused) {
+          playpause.addEventListener('click', function() {
+              if (audio.paused) {
 		  audio.play();
 		  playpause.innerHTML = 'Pause';
-	      } else {
+              } else {
 		  audio.pause();
 		  playpause.innerHTML = 'Play';
-	      }
-	  });
+              }
+          });
 
-	  volume.addEventListener('input', function() {
-	      audio.volume = volume.value;
-	  });
+          volume.addEventListener('input', function() {
+              audio.volume = volume.value;
+          });
       });
     </script>
   </body>

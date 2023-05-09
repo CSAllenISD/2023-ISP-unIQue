@@ -1,29 +1,104 @@
 /* styles.css */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
+    min-height: 100vh;
+    background: #c3cb71;
+    color: rgb(211, 211, 211);
     margin: 0;
     padding: 0;
 }
 
+
 header {
-    text-align: center;
-    padding: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    
 }
 
+<<<<<<< HEAD
 h2,
 h1 {
+=======
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    Letter-spacing: 2px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover, header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+}
+
+
+.top h1,
+h3 {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2b1055;
+}
+.top h1 {
+>>>>>>> main
     font-size: 2.2rem;
     margin-bottom: 10px;
 }
 
-h3 {
+.top h3 {
     font-size: 1.4rem;
     margin-top: 0;
 }
 
+.links h1 {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2b1055;
+}
 nav {
     display: flex;
     justify-content: center;
@@ -37,7 +112,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #0077cc;
+    color: #C70039;
 }
 
 section {
@@ -53,10 +128,10 @@ section {
     margin-top: 10px;
 }
 
-a {
+.links a {
     text-decoration: none;
     color: #333;
-    background-color: #e6efff;
+    background-color: #cce4ff;
     border-radius: 5px;
     padding: 8px 12px;
     margin: 5px;
@@ -64,5 +139,6 @@ a {
 }
 
 a:hover {
-    background-color: #cce4ff;
+    /*    background-color: linear-gradient(rgba(255,195,0,.5), rgba(255,100,0,.5), rgba(255,87,51,.5)); */
+    background-color: rgba(255,87,51,.5);
 }
