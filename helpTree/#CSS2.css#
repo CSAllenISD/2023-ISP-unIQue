@@ -1,0 +1,591 @@
+/* styles.css *//* styles.css */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+body {body {
+	     font-family: Arial, sans-serif;    min-height: 100vh;
+	     background-color: #f0f8ff;    background: #c3cb71;
+	     color: #333;    color: rgb(211, 211, 211);
+	     margin: 0;    margin: 0;
+	     padding: 0;    padding: 0;
+	 }}
+
+
+
+header {header {
+	       text-align: center;    position: relative;
+	       padding: 20px;    top: 0;
+	       left: 0;
+	       width: 100%;
+	       padding: 30px 100px;
+	       display: flex;
+	       justify-content: space-between;
+	       align-items: center;
+	       z-index: 10000;
+
+	   }}
+
+
+<<<<<<< HEAD
+h2,h2,
+h1 {h1 {
+	   =======
+	   header .logo
+	   {
+	       color: #fff;
+	       font-weight: 700;
+	       text-decoration: none;
+	       font-size: 2em;
+	       text-transform: uppercase;
+	       Letter-spacing: 2px;
+	   }
+
+	   header ul
+	   {
+	       display: flex;
+	       justify-content: center;
+	       align-items: center;
+
+	   }
+
+	   header ul li
+	   {
+	       list-style: none;
+	       margin-left: 20px;
+	   }
+
+	   header ul li a
+	   {
+	       text-decoration: none;
+	       padding: 6px 15px;
+	       color: #fff;
+	       border-radius: 20px;
+	   }
+
+	   header ul li a:hover, header ul li a.active {
+	       background: #fff;
+	       color: #2b1055;
+	   }
+
+
+	   .top h1,
+	   h3 {
+	       padding: 1rem;
+	       display: flex;
+	       justify-content: center;
+	       align-items: center;
+	       color: #2b1055;
+	   }
+	   .top h1 {
+	       >>>>>>> main
+	       font-size: 2.2rem;    font-size: 2.2rem;
+	       margin-bottom: 10px;    margin-bottom: 10px;
+	   }}
+
+
+    h3 {.top h3 {
+	       font-size: 1.4rem;    font-size: 1.4rem;
+	       margin-top: 0;    margin-top: 0;
+	   }}
+
+
+    .links h1 {
+	padding-top: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #2b1055;
+    }
+    nav {nav {
+		display: flex;    display: flex;
+		justify-content: center;    justify-content: center;
+		@@ -37,7 +112,7 @@ nav a {
+		}}
+
+
+	 nav a:hover {nav a:hover {
+			     color: #0077cc;    color: #C70039;
+			 }}
+
+
+	 section {section {
+			 @@ -53,16 +128,17 @@ section {
+			     margin-top: 10px;    margin-top: 10px;
+			 }}
+
+
+		  a {.links a {
+			    text-decoration: none;    text-decoration: none;
+			    color: #333;    color: #333;
+			    background-color: #e6efff;    background-color: #cce4ff;
+			    border-radius: 5px;    border-radius: 5px;
+			    padding: 8px 12px;    padding: 8px 12px;
+			    margin: 5px;    margin: 5px;
+			    transition: background-color 0.3s;    transition: background-color 0.3s;
+			}}
+
+
+		  a:hover {a:hover {
+				  background-color: #cce4ff;    /*    background-color: linear-gradient(rgba(255,195,0,.5), rgba(255,100,0,.5), rgba(255,87,51,.5)); */
+				  background-color: rgba(255,87,51,.5);
+			      }}
+		  20 changes: 15 additions & 5 deletions20
+			      helpTree/home.html
+			      @@ -1,6 +1,5 @@
+					   <!DOCTYPE html><!DOCTYPE html>
+					   <html lang="en"><html lang="en">
+
+					   <head>  <head>
+					   <meta charset="UTF-8">    <meta charset="UTF-8">
+					   <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+					   @@ -10,10 +9,21 @@
+
+
+							   <body>  <body>
+							   <header>    <header>
+							   <h1>Welcome to the Help Tree!</h1>                  <a href="#" class="logo">unIQue</a>
+							   <h3>How are you Feeling?</h3>      <ul>
+							   </header><li><a href="../HTML/index.html">Home</a></li>
+							   <li><a href="../HTML/games/index.html">Games</a></li>
+							   <li><a href="../food-court/home.html">Food and Recipes</a></li>
+							   <li><a href="../white-noise/revampedNoise.html">White Noise</a></li>
+							   <li><a href="#" class="active">Help Tree</a></li>
+							   </ul>
+
+
+							   </header>
+							   <div class="top">
+							   <h1>Welcome to the Help Tree!</h1>
+							   <h3>How are you Feeling?</h3>
+							   </div>
+							   <div class="links">
+							   <nav>    <nav>
+							   <a href="../HTML/index.html" target="_blank">Back to Homepage</a>      <a href="../HTML/index.html" target="_blank">Back to Homepage</a>
+							   <a href="../white-noise/noise.html" target="_blank">White Noise</a>      <a href="../white-noise/noise.html" target="_blank">White Noise</a>
+							   @@ -38,7 +48,7 @@ <h2>I Need...</h2>
+									  <a href="immediate-support.html">Immediate Help</a><a href="immediate-support.html">Immediate Help</a>
+									  </div>      </div>
+									  </section>    </section>
+
+									  </div>
+									  </body>  </body>
+
+
+									  </html></html>
+									  121 changes: 80 additions & 41 deletions121
+										       white-noise/CSSnoise.css
+										       @@ -1,64 +1,103 @@
+												       body::before {
+		      content: "";
+		      position: fixed;
+		      top: 0;
+		      left: 0;
+		      width: 100%;
+		      height: 100%;
+		      background-image: url("https://bookstr.com/wp-content/uploads/2021/09/00443d63-06f8-48c5-9621-0a9240f3789e.gif");
+		      background-size: cover;
+		      filter: blur(5px);
+		      z-index: -1;
+		  }
+		  body {body {
+			       font-family: Arial, sans-serif;    font-family: Arial, sans-serif;
+			       background-color: #f5f5f5;    background-color: rgba(17, 17, 17, 0.6);
+			       color: #333;    color: #FFF;
+			       padding: 20px;    padding: 20px;
+			   }
+			.container {
+			    backdrop-filter: blur(10px);
+			    background-color: rgba(17, 17, 17, 0.6);
+			    border-radius: 10px;
+			    padding: 20px;
+			    margin-bottom: 20px;
+			}
+			.page-title {
+			    font-size: 36px;
+			    font-weight: bold;
+			    text-align: center;
+			    margin-bottom: 20px;
+			}}
+
+
+		  p {.page-subtitle {
+			    font-size: 18px;    font-size: 18px;
+			    font-weight: bold;    text-align: center;
+			    margin-bottom: 5px;    margin-bottom: 40px;
+			}}
+
+
+		  .audio-player {.audio-player {
+					margin-bottom: 20px;    display: flex;
+					padding: 15px;    flex-direction: column;
+					border: 1px solid #ccc;    align-items: center;
+					background-color: #fff;    margin-bottom: 20px;
+					box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);    padding: 15px;
+					border-radius: 4px;    background-color: rgba(0, 0, 0, 0.3);
+					border-radius: 4px;
+				    }
+
+				 .audio-player p {
+				     font-size: 18px;
+				     font-weight: bold;
+				     margin-bottom: 5px;
+				     text-transform: uppercase;
+				 }}
+
+
+		  .audio-player audio {.audio-player audio {
+					      display: block;    display: block;
+					      margin-bottom: 10px;    margin-bottom: 10px;
+					      width: 100%;    width: 100%;
+					  }}
+
+
+		  .audio-player button {.audio-player button {
+					       margin-right: 10px;    margin-right: 10px;
+					       padding: 5px 10px;    margin-bottom: 5px;
+					       font-size: 14px;    padding: 5px 10px;
+					       color: #fff;    font-size: 14px;
+					       background-color: #007bff;    color: #fff;
+					       border: none;    background-color: rgba(255, 255, 255, 0.3);
+					       border-radius: 4px;    border: 1px solid #fff;
+					       cursor: pointer;    border-radius: 20px;
+					       outline: none;    cursor: pointer;
+					       transition: background-color 0.2s;    outline: none;
+					       transition: background-color 0.2s;
+					   }}
+
+
+		  .audio-player button:hover {.audio-player button:hover {
+						     background-color: #0056b3;    background-color: rgba(255, 255, 255, 0.5);
+						 }}
+
+
+		  .audio-player input[type="range"] {.audio-player input[type="range"] {
+							    display: inline-block;    display: inline-block;
+							    width: 60%;    width: 60%;
+							    vertical-align: middle;    vertical-align: middle;
+							    background-color: transparent;
+							    -webkit-appearance: none;
+							}}
+
+
+		  .page-title {.audio-player input[type="range"]::-webkit-slider-thumb {
+				      font-size: 36px;    -webkit-appearance: none;
+				      font-weight: bold;    width: 14px;
+				      text-align: center;    height: 14px;
+				      margin-bottom: 20px;    background: white;
+				      border-radius: 50%;
+				      cursor: pointer;
+				      margin-top: -5px; /* Add this line to center the position indicator */
+				  }}
+
+
+		  .page-subtitle {.audio-player input[type="range"]::-webkit-slider-runnable-track {
+					 font-size: 18px;    width: 100%;
+					 text-align: center;    height: 4px;
+					 margin-bottom: 40px;    background: rgba(255, 255, 255, 0.3);
+					 border-radius: 2px;
+				     }/* styles.css *//* styles.css */
+				  @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+				  *{
+				      margin: 0;
+				      padding: 0;
+				      box-sizing: border-box;
+				      font-family: 'Poppins', sans-serif;
+				      scroll-behavior: smooth;
+				  }
+
+
+				  body {body {
+					       font-family: Arial, sans-serif;    min-height: 100vh;
+					       background-color: #f0f8ff;    background: #c3cb71;
+					       color: #333;    color: rgb(211, 211, 211);
+					       margin: 0;    margin: 0;
+					       padding: 0;    padding: 0;
+					   }}
+
+
+
+				  header {header {
+						 text-align: center;    position: relative;
+						 padding: 20px;    top: 0;
+						 left: 0;
+						 width: 100%;
+						 padding: 30px 100px;
+						 display: flex;
+						 justify-content: space-between;
+						 align-items: center;
+						 z-index: 10000;
+
+					     }}
+
+
+				  <<<<<<< HEAD
+				  h2,h2,
+				  h1 {h1 {
+					     =======
+					     header .logo
+					     {
+						 color: #fff;
+						 font-weight: 700;
+						 text-decoration: none;
+						 font-size: 2em;
+						 text-transform: uppercase;
+						 Letter-spacing: 2px;
+					     }
+
+					     header ul
+					     {
+						 display: flex;
+						 justify-content: center;
+						 align-items: center;
+
+					     }
+
+					     header ul li
+					     {
+						 list-style: none;
+						 margin-left: 20px;
+					     }
+
+					     header ul li a
+					     {
+						 text-decoration: none;
+						 padding: 6px 15px;
+						 color: #fff;
+						 border-radius: 20px;
+					     }
+
+					     header ul li a:hover, header ul li a.active {
+						 background: #fff;
+						 color: #2b1055;
+					     }
+
+
+					     .top h1,
+					     h3 {
+						 padding: 1rem;
+						 display: flex;
+						 justify-content: center;
+						 align-items: center;
+						 color: #2b1055;
+					     }
+					     .top h1 {
+						 >>>>>>> main
+						 font-size: 2.2rem;    font-size: 2.2rem;
+						 margin-bottom: 10px;    margin-bottom: 10px;
+					     }}
+
+
+				      h3 {.top h3 {
+						 font-size: 1.4rem;    font-size: 1.4rem;
+						 margin-top: 0;    margin-top: 0;
+					     }}
+
+
+				      .links h1 {
+					  padding-top: 1rem;
+					  display: flex;
+					  justify-content: center;
+					  align-items: center;
+					  color: #2b1055;
+				      }
+				      nav {nav {
+						  display: flex;    display: flex;
+						  justify-content: center;    justify-content: center;
+						  @@ -37,7 +112,7 @@ nav a {
+						  }}
+
+
+					   nav a:hover {nav a:hover {
+							       color: #0077cc;    color: #C70039;
+							   }}
+
+
+					   section {section {
+							   @@ -53,16 +128,17 @@ section {
+							       margin-top: 10px;    margin-top: 10px;
+							   }}
+
+
+						    a {.links a {
+							      text-decoration: none;    text-decoration: none;
+							      color: #333;    color: #333;
+							      background-color: #e6efff;    background-color: #cce4ff;
+							      border-radius: 5px;    border-radius: 5px;
+							      padding: 8px 12px;    padding: 8px 12px;
+							      margin: 5px;    margin: 5px;
+							      transition: background-color 0.3s;    transition: background-color 0.3s;
+							  }}
+
+
+						    a:hover {a:hover {
+								    background-color: #cce4ff;    /*    background-color: linear-gradient(rgba(255,195,0,.5), rgba(255,100,0,.5), rgba(255,87,51,.5)); */
+								    background-color: rgba(255,87,51,.5);
+								}}
+						    20 changes: 15 additions & 5 deletions20
+								helpTree/home.html
+								@@ -1,6 +1,5 @@
+									     <!DOCTYPE html><!DOCTYPE html>
+									     <html lang="en"><html lang="en">
+
+									     <head>  <head>
+									     <meta charset="UTF-8">    <meta charset="UTF-8">
+									     <meta name="viewport" content="width=device-width, initial-scale=1.0">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+									     @@ -10,10 +9,21 @@
+
+
+											     <body>  <body>
+											     <header>    <header>
+											     <h1>Welcome to the Help Tree!</h1>                  <a href="#" class="logo">unIQue</a>
+											     <h3>How are you Feeling?</h3>      <ul>
+											     </header><li><a href="../HTML/index.html">Home</a></li>
+											     <li><a href="../HTML/games/index.html">Games</a></li>
+											     <li><a href="../food-court/home.html">Food and Recipes</a></li>
+											     <li><a href="../white-noise/revampedNoise.html">White Noise</a></li>
+											     <li><a href="#" class="active">Help Tree</a></li>
+											     </ul>
+
+
+											     </header>
+											     <div class="top">
+											     <h1>Welcome to the Help Tree!</h1>
+											     <h3>How are you Feeling?</h3>
+											     </div>
+											     <div class="links">
+											     <nav>    <nav>
+											     <a href="../HTML/index.html" target="_blank">Back to Homepage</a>      <a href="../HTML/index.html" target="_blank">Back to Homepage</a>
+											     <a href="../white-noise/noise.html" target="_blank">White Noise</a>      <a href="../white-noise/noise.html" target="_blank">White Noise</a>
+											     @@ -38,7 +48,7 @@ <h2>I Need...</h2>
+													    <a href="immediate-support.html">Immediate Help</a><a href="immediate-support.html">Immediate Help</a>
+													    </div>      </div>
+													    </section>    </section>
+
+													    </div>
+													    </body>  </body>
+
+
+													    </html></html>
+													    121 changes: 80 additions & 41 deletions121
+															 white-noise/CSSnoise.css
+															 @@ -1,64 +1,103 @@
+																	 body::before {
+							content: "";
+							position: fixed;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							background-image: url("https://bookstr.com/wp-content/uploads/2021/09/00443d63-06f8-48c5-9621-0a9240f3789e.gif");
+							background-size: cover;
+							filter: blur(5px);
+							z-index: -1;
+						    }
+						    body {body {
+								 font-family: Arial, sans-serif;    font-family: Arial, sans-serif;
+								 background-color: #f5f5f5;    background-color: rgba(17, 17, 17, 0.6);
+								 color: #333;    color: #FFF;
+								 padding: 20px;    padding: 20px;
+							     }
+							  .container {
+							      backdrop-filter: blur(10px);
+							      background-color: rgba(17, 17, 17, 0.6);
+							      border-radius: 10px;
+							      padding: 20px;
+							      margin-bottom: 20px;
+							  }
+							  .page-title {
+							      font-size: 36px;
+							      font-weight: bold;
+							      text-align: center;
+							      margin-bottom: 20px;
+							  }}
+
+
+						    p {.page-subtitle {
+							      font-size: 18px;    font-size: 18px;
+							      font-weight: bold;    text-align: center;
+							      margin-bottom: 5px;    margin-bottom: 40px;
+							  }}
+
+
+						    .audio-player {.audio-player {
+									  margin-bottom: 20px;    display: flex;
+									  padding: 15px;    flex-direction: column;
+									  border: 1px solid #ccc;    align-items: center;
+									  background-color: #fff;    margin-bottom: 20px;
+									  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);    padding: 15px;
+									  border-radius: 4px;    background-color: rgba(0, 0, 0, 0.3);
+									  border-radius: 4px;
+								      }
+
+								   .audio-player p {
+								       font-size: 18px;
+								       font-weight: bold;
+								       margin-bottom: 5px;
+								       text-transform: uppercase;
+								   }}
+
+
+						    .audio-player audio {.audio-player audio {
+										display: block;    display: block;
+										margin-bottom: 10px;    margin-bottom: 10px;
+										width: 100%;    width: 100%;
+									    }}
+
+
+						    .audio-player button {.audio-player button {
+										 margin-right: 10px;    margin-right: 10px;
+										 padding: 5px 10px;    margin-bottom: 5px;
+										 font-size: 14px;    padding: 5px 10px;
+										 color: #fff;    font-size: 14px;
+										 background-color: #007bff;    color: #fff;
+										 border: none;    background-color: rgba(255, 255, 255, 0.3);
+										 border-radius: 4px;    border: 1px solid #fff;
+										 cursor: pointer;    border-radius: 20px;
+										 outline: none;    cursor: pointer;
+										 transition: background-color 0.2s;    outline: none;
+										 transition: background-color 0.2s;
+									     }}
+
+
+						    .audio-player button:hover {.audio-player button:hover {
+										       background-color: #0056b3;    background-color: rgba(255, 255, 255, 0.5);
+										   }}
+
+
+						    .audio-player input[type="range"] {.audio-player input[type="range"] {
+											      display: inline-block;    display: inline-block;
+											      width: 60%;    width: 60%;
+											      vertical-align: middle;    vertical-align: middle;
+											      background-color: transparent;
+											      -webkit-appearance: none;
+											  }}
+
+
+						    .page-title {.audio-player input[type="range"]::-webkit-slider-thumb {
+									font-size: 36px;    -webkit-appearance: none;
+									font-weight: bold;    width: 14px;
+									text-align: center;    height: 14px;
+									margin-bottom: 20px;    background: white;
+									border-radius: 50%;
+									cursor: pointer;
+									margin-top: -5px; /* Add this line to center the position indicator */
+								    }}
+
+
+						    .page-subtitle {.audio-player input[type="range"]::-webkit-slider-runnable-track {
+									   font-size: 18px;    width: 100%;
+									   text-align: center;    height: 4px;
+									   margin-bottom: 40px;    background: rgba(255, 255, 255, 0.3);
+									   border-radius: 2px;
+								       }
