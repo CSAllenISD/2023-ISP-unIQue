@@ -7,18 +7,71 @@
     <link rel="stylesheet" href="CSSWiki.css">
   </head>
   <body>
-    <h1>Feeling Content, Upbeat, or Excited?</h1>
-    <br>
-
-    <p>That's awesome to hear! Positive emotions are always great to hear even if its just being content with where you are now. Let yourself be happy with  whatever's making you feel this way, maybe its a good grade, a good conversation with someone, or just waking up on the right side of the bed. </p>
+        <header>
+      <a href="#" class="logo">unIQue</a>
+      <ul>
+	<li><a href="../../HTML/index.html">Home</a></li>
+	<li><a href="games.html">Games</a></li>
+	<li><a href="../food-court/home.html">Food and Recipes</a></li>
+	<li><a href="../white-noise/prototype/basic-example.html">White Noise</a></li>
+	<li><a href="../helpTree/home.html" class="active">Help Tree</a></li>
+	</ul>
+	</header>
+	<section class="top">
+	  <div class="title">Feeling Content, Upbeat, or Excited?</div>
+	      <div class="main-area">
+      <div class="circles">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	
+      </div>
+    </div>
+	</section>
+	
+    <section class="wiki">
+      <div class="row">
+	<div class="large-col">
+	  <div class="row">
+	    <div class="small-col">
+	         <p>That's awesome to hear! Positive emotions are always great to hear even if its just being content with where you are now. Let yourself be happy with  whatever's making you feel this way, maybe its a good grade, a good conversation with someone, or just waking up on the right side of the bed. </p>
 
     <p>Making the most out of a good mood can be a great thing. Whether that be helping out others during this time, or just going out and enjoying doing something, getting the most out of being in a good mood can feel great.</p>
 
     <p>At the end of the day, no matter what caused it or what you do with it, enjoy and really feel how you're feeling. It may not last forever, but positive times are what help you get through the negative ones, so keep your head up and have a good day!</p>
+	    </div>
+	  </div>
+	</div>
+      </div>
+      <div class="row">
+	<div class="large-col">		
+	  
+	  <h1>For further help, checkout the relevant pages below.</h1>
+	  <div class="row">
+	    <div class="small-col">
+	    </div>
+	  </div>
+	</div>
+      </div>
 
-    <h2>For further help, checkout the relevant pages below.</h2>
-    <br>
-    <a href="~/projects/unique/2023-ISP-unIQue/helpTree/home.html" target="_blank">Back to Homepage</a>
-    
+    </section>
+        <script>
+      let text = document.getElementById('text');
+      let arrow = document.getElementById('btn');
+      window.addEventListener('scroll', function(){
+	  let value = window.scrollY;
+	  text.style.marginRight = value * 4 + 'px';
+	  text.style.marginTop = value * 1.5 + 'px';
+	  arrow.style.marginTop = value * 1.5 + 'px';
+      })
+      
+    </script>
   </body>
 </html>
