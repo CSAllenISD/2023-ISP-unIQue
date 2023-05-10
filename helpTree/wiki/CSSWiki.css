@@ -1,4 +1,78 @@
-/* CSSWiki.css */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+  background-image:				  
+	radial-gradient(at 71% 29%, hsla(323, 82%,62%,1) 0, transparent 52%),
+	radial-gradient(at 44% 25%, hsla(78, 87%,69%,1) 0, transparent 54%),
+	radial-gradient(at 2% 54%, hsla(330, 92%,71%,1) 0, transparent 57%),
+	radial-gradient(at 2% 25%, hsla(347, 76%,68%,1) 0, transparent 46%),
+	radial-gradient(at 10% 67%, hsla(164, 63%,60%,1) 0, transparent 46%),
+	radial-gradient(at 90% 74%, hsla(86, 74%,75%,1) 0, transparent 40%),
+	radial-gradient(at 55% 63%, hsla(336, 85%,61%,1) 0, transparent 45%);
+    background-position: center;
+    background-size: cover;
+
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+    
+}
+
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    Letter-spacing: 2px;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+}
+/*
 body {
     font-family: Arial, sans-serif;
     color: #333;
@@ -37,4 +111,240 @@ hr {
     height: 1px;
     background: #ccc;
     margin: 20px 0;
+}
+*/
+/* title/circls */
+.title {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+    z-index: 999;
+}
+.top {
+    min-height: 100vh;
+    width: 100%;
+    /*
+    background-image:				  
+	radial-gradient(at 71% 29%, hsla(323, 82%,62%,1) 0, transparent 52%),
+	radial-gradient(at 44% 25%, hsla(78, 87%,69%,1) 0, transparent 54%),
+	radial-gradient(at 2% 54%, hsla(330, 92%,71%,1) 0, transparent 57%),
+	radial-gradient(at 2% 25%, hsla(347, 76%,68%,1) 0, transparent 46%),
+	radial-gradient(at 10% 67%, hsla(164, 63%,60%,1) 0, transparent 46%),
+	radial-gradient(at 90% 74%, hsla(86, 74%,75%,1) 0, transparent 40%),
+	radial-gradient(at 55% 63%, hsla(336, 85%,61%,1) 0, transparent 45%);
+    background-position: center;
+    background-size: cover;
+*/
+    position: relative;
+
+}
+/*
+#text
+{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    color: #fff;
+    font-size: 1vw;
+    overflow: hidden;
+    z-index: 9;
+    transform: translateY(-100px);
+}
+
+#arrow {
+    left: 50%;
+    top: 50%;
+    padding: 8px 30px;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);    
+}
+*/
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+/*    overflow: hidden; */
+}
+@keyframes animate {
+    0% {
+	opacity: 1;
+	border-radius: 0;
+	transform: translateY(0) rotate(0deg);
+    }
+    100% {
+	opacity: 0;
+	border-radius: 50%;
+	transform: translateY(2000px) rotate(720deg);
+
+    }
+}
+.circles div {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    /*    bottom: -150px; */
+    top: -150px;
+    z-index: 9999;
+    animation: animate 25s linear infinite;
+
+}
+.circles div:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.circles div:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+.circles div:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+.circles div:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+.circles div:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+.circles div:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+.circles div:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+.circles div:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+.circles div:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 35s;
+}
+.circles div:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 14s;
+}
+
+/*Proposal*/
+.wiki{
+    position: relative;
+    margin: auto;
+    overflow-x: hidden;
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
+    /*    overflow: hidden; */
+    /*
+    background-image:
+	radial-gradient(at 71% 29%, hsla(164, 63%,60%,1) 0, transparent 46%),
+	radial-gradient(at 85% 2%, hsla(86, 74%,75%,1) 0, transparent 40%),
+	radial-gradient(at 55% 60%, hsla(336, 85%,61%,1) 0, transparent 45%),
+	radial-gradient(at 69% 87%, hsla(323, 82%,62%,1) 0, transparent 58%),
+	radial-gradient(at 44% 25%, hsla(78, 87%,69%,1) 0, transparent 44%),
+	radial-gradient(at 2% 54%, hsla(330, 92%,71%,1) 0, transparent 57%),
+	radial-gradient(at 2% 25%, hsla(347, 76%,68%,1) 0, transparent 46%);
+    background-position: center;
+    background-size: cover;
+*/
+   /*  background: linear-gradient(to top, #e66465, #9198e5, #E5F9F4);	 */
+}
+
+.wiki h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.wiki p{
+    color: #478778;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 2;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+.row{
+    margin-top: 5%;
+}
+
+.small-col{
+    flex-basis: 100%;
+    border: 10px solid #50C878;
+    background: #C1E1C1;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.wiki p:hover{
+    color: #D7FF01;
+}
+.small-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+
+
+/** large columns **/
+.large-col {
+    flex-basis: 100%;
+    width: 80%;
+    border: 10px solid #355E3B;
+    background: #3E9481;
+    border-radius: 10px;
+    margin-bottom: 2%;
+/*    margin-right: 1.5%;
+    margin-left: 1.5%;
+*/
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.large-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+    transform: scale(1.020);
 }
