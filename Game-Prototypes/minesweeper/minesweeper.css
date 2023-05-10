@@ -61,24 +61,26 @@ header ul li a.active
 }
 
 body {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, sans-serif;
+    background-image:linear-gradient(#F0A2DE,#F2F087,#F2C687);
 }
 
 #gameBoard {
     display: grid;
     grid-gap: 1px;
-    background-color: #ccc;
+    background-color: #c5fb9d;
     margin-top: 20px;
 }
 
 .tile {
     width: 30px;
     height: 30px;
-    background-color: #eee;
-    border: 1px solid #ccc;
+    background-color: #FFCFA0;
+    border: 1px solid #1B0079;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -86,7 +88,7 @@ body {
 }
 
 .tile.revealed {
-    background-color: #ccc;
+    background-color: #FFCD11;
 }
 
 .tile.flag {
