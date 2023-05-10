@@ -1,1 +1,100 @@
-<link rel="stylesheet" href="CSSWiki.css">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice</title>
+    <link rel="stylesheet" href="CSSWiki.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">unIQue</a>
+      <ul>
+	<li><a href="../../HTML/index.html">Home</a></li>
+	<li><a href="../../HTML/games/index.html">Games</a></li>
+	<li><a href="../../food-court/home.html">Food and Recipes</a></li>
+	<li><a href="../../white-noise/revampedNoise.html">White Noise</a></li>
+	<li><a href="../home.html" class="active">Help Tree</a></li>
+	</ul>
+    </header>
+    <section class="top">
+      <div class="title">Feeling Annoyed, Mad, or Outraged?</div>
+
+    <div class="main-area">
+      <div class="circles">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	
+      </div>
+    </div>
+    </section>
+
+    <section class="wiki">
+      
+      <div class="row">
+	<div class="large-col">		
+	  <h1>Tip #1</h1>
+	  <div class="row">
+	    <div class="small-col">
+	      <video width="360" height="640" controls>
+		<source src="https://www.codermerlin.academy/users/faraz-piracha/Media/food-tip.mp4" type="video/mp4">
+		Your browser does not support this video.
+	      </video>
+	      
+	    </div>
+	  </div>
+	</div>
+      </div>
+      <div class="row">
+	<div class="large-col">		
+	  <h1>Tip #2</h1>
+	  <div class="row">
+	    <div class="small-col">	      
+	       <video width="360" height="640" controls>
+		<source src="https://www.codermerlin.academy/users/faraz-piracha/Media/screen-tip.mp4" type="video/mp4">
+		Your browser does not support this video.
+	      </video>
+	     
+	    </div>
+	  </div>
+	</div>
+      </div>
+
+			<div class="row">
+			  <div class="large-col">		
+			    
+			    <h1>Tip #3</h1>
+			    <div class="row">
+	    <div class="small-col">
+	      <video width="360" height="640" controls>
+		<source src="https://www.codermerlin.academy/users/faraz-piracha/Media/water-tip.mp4" type="video/mp4">
+		Your browser does not support this video.
+	      </video>
+	     
+	    </div>
+	  </div>
+	</div>
+      </div>
+
+    </section>
+        <script>
+      let text = document.getElementById('text');
+      let arrow = document.getElementById('btn');
+      window.addEventListener('scroll', function(){
+	  let value = window.scrollY;
+	  text.style.marginRight = value * 4 + 'px';
+	  text.style.marginTop = value * 1.5 + 'px';
+	  arrow.style.marginTop = value * 1.5 + 'px';
+      })
+      
+    </script>
+  </body>
+</html>

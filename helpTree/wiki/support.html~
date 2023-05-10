@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealing with Anger</title>
+    <link rel="stylesheet" href="CSSWiki.css">
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">unIQue</a>
+      <ul>
+	<li><a href="../../HTML/index.html">Home</a></li>
+	<li><a href="../../HTML/games/index.html">Games</a></li>
+	<li><a href="../../food-court/home.html">Food and Recipes</a></li>
+	<li><a href="../../white-noise/revampedNoise.html">White Noise</a></li>
+	<li><a href="../home.html" class="active">Help Tree</a></li>
+	</ul>
+    </header>
+    <section class="top">
+      <div class="title">Feeling Annoyed, Mad, or Outraged?</div>
+
+    <div class="main-area">
+      <div class="circles">
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	
+      </div>
+    </div>
+    </section>
+
+    <section class="wiki">
+      <div class="row">
+	<div class="large-col">
+	  <div class="row">
+	    <div class="small-col">
+	      <p>Anger can be a complicated emotion, often being mixed with sadness or worry, but there are things that, depending on the cause, you can do to help yourself feel a little better.</p>
+	    </div>
+	  </div>
+	</div>
+      </div>
+      
+      <div class="row">
+	<div class="large-col">		
+	  <h1>Ways to find Support</h1>
+	  <div class="row">
+	    <div class="small-col">
+	      <p>One of the best pieces of advice for improving mental health and wellbeing is to prioritize self-care. This means taking the time to engage in activities that promote relaxation, reduce stress, and improve overall mood. Self-care can take many different forms, such as exercise, meditation, reading, spending time with loved ones, or simply taking a break from work and responsibilities. It's important to make self-care a regular habit rather than something that only happens when you're feeling overwhelmed or burnt out. By prioritizing self-care, you can boost your mental health and overall sense of wellbeing, which can have a positive impact on all areas of your life.
+	      </p>
+	      <p>Another important aspect of maintaining good mental health and wellbeing is to build and maintain strong social connections. While self-care is crucial for taking care of yourself, social connections are vital for connecting with others and building a support system. Humans are social creatures and crave connection, so it's important to prioritize socializing with loved ones, joining groups or clubs, or volunteering in the community. Socializing can also help to reduce feelings of isolation or loneliness, which can negatively impact mental health. It's important to cultivate and maintain positive relationships with people who uplift and support you, as this can greatly improve overall wellbeing. By combining self-care practices with strong social connections, you can create a solid foundation for good mental health and wellbeing.
+	      </p>
+    	    </div>
+	  </div>
+	</div>
+      </div>
+    </section>
+        <script>
+      let text = document.getElementById('text');
+      let arrow = document.getElementById('btn');
+      window.addEventListener('scroll', function(){
+	  let value = window.scrollY;
+	  text.style.marginRight = value * 4 + 'px';
+	  text.style.marginTop = value * 1.5 + 'px';
+	  arrow.style.marginTop = value * 1.5 + 'px';
+      })
+      
+    </script>
+  </body>
+</html>
