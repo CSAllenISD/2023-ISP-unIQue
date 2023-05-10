@@ -1,1 +1,30 @@
-<!DOCTPY
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>unIQue bombs</title>
+  <link rel="stylesheet" href="minesweeper.css">
+</head>
+<body>
+
+      <header>
+      <a href="../../HTML/index.html" class="logo">unIQue</a>
+      <ul>
+	<li><a href="../../HTML/index.html">Home</a></li>
+	<li><a href="../../HTML/games/">Games</a></li>
+	<li><a href="../../food-court/home.html">Food and Recipes</a></li>
+	<li><a href="../../white-noise/noise.html">White Noise</a></li>
+	<li><a href="../../helpTree/home.html">Help Tree</a></li>
+	</ul>
+      </header>
+      
+  <h1>unIQue bombs</h1>
+  <div>
+    <button onclick="startGame('easy')">Apprentice</button>
+    <button onclick="startGame('medium')">Prodigy</button>
+    <button onclick="startGame('hard')">Enigma</button>
+  </div>
+  <div id="gameBoard"></div>
+  <script src="minesweeper.js"></script>
+</body>
+</html>
